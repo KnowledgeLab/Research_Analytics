@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio Item - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html">Back to Network</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">$author
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="radarChart"></div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Author Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                <h3>Project Details</h3>
+                <ul>
+                    <li>Lorem Ipsum</li>
+                    <li>Dolor Sit Amet</li>
+                    <li>Consectetur</li>
+                    <li>Adipiscing Elit</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Similar Authors</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <h5>$simAuthor1</h5>
+                <a href="$simAuthor1.html" >
+                    <div class="chart1"></div>
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <h5>$simAuthor2</h5>
+                <a href="$simAuthor2.html" >
+                    <div class="chart2"></div>
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <h5>$simAuthor3</h5>
+                <a href="$simAuthor3.html" >
+                    <div class="chart3"></div>
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <h5>$simAuthor4</h5>
+                <a href="$simAuthor4.html" >
+                    <div class="chart4"></div>
+                </a>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Cha Chen 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+		<script src="radarChart.js"></script>	
+		<script>
+		 ////////////////////////////////////////////////////////////// 
+		 //////////////////////// Set-Up ////////////////////////////// 
+		 ////////////////////////////////////////////////////////////// 
+
+		 var margin = {top: 100, right: 100, bottom: 100, left: 100},
+				 width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
+				 height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+
+
+		 
+		 ////////////////////////////////////////////////////////////// 
+		 ////////////////////////// Data ////////////////////////////// 
+		 ////////////////////////////////////////////////////////////// 
+
+     var data = [
+         [
+             {axis:$Topic0,value:$Value0},
+             {axis:$Topic1,value:$Value1},
+             {axis:$Topic2,value:$Value2},
+             {axis:$Topic3,value:$Value3},
+             {axis:$Topic4,value:$Value4},
+             {axis:$Topic5,value:$Value5},
+             {axis:$Topic6,value:$Value6},
+             {axis:$Topic7,value:$Value7},
+             {axis:$Topic8,value:$Value8},
+             {axis:$Topic9,value:$Value9}
+         ]
+     ];
+     var dataSim1 = [
+         [
+             {axis:$Sim1Topic0,value:$Sim1Value0},
+             {axis:$Sim1Topic1,value:$Sim1Value1},
+             {axis:$Sim1Topic2,value:$Sim1Value2},
+             {axis:$Sim1Topic3,value:$Sim1Value3},
+             {axis:$Sim1Topic4,value:$Sim1Value4},
+             {axis:$Sim1Topic5,value:$Sim1Value5},
+             {axis:$Sim1Topic6,value:$Sim1Value6},
+             {axis:$Sim1Topic7,value:$Sim1Value7},
+             {axis:$Sim1Topic8,value:$Sim1Value8},
+             {axis:$Sim1Topic9,value:$Sim1Value9}
+         ]
+     ];
+     var dataSim2 = [
+         [
+             {axis:$Sim2Topic0,value:$Sim2Value0},
+             {axis:$Sim2Topic1,value:$Sim2Value1},
+             {axis:$Sim2Topic2,value:$Sim2Value2},
+             {axis:$Sim2Topic3,value:$Sim2Value3},
+             {axis:$Sim2Topic4,value:$Sim2Value4},
+             {axis:$Sim2Topic5,value:$Sim2Value5},
+             {axis:$Sim2Topic6,value:$Sim2Value6},
+             {axis:$Sim2Topic7,value:$Sim2Value7},
+             {axis:$Sim2Topic8,value:$Sim2Value8},
+             {axis:$Sim2Topic9,value:$Sim2Value9}
+         ]
+     ];
+     var dataSim3 = [
+         [
+             {axis:$Sim3Topic0,value:$Sim3Value0},
+             {axis:$Sim3Topic1,value:$Sim3Value1},
+             {axis:$Sim3Topic2,value:$Sim3Value2},
+             {axis:$Sim3Topic3,value:$Sim3Value3},
+             {axis:$Sim3Topic4,value:$Sim3Value4},
+             {axis:$Sim3Topic5,value:$Sim3Value5},
+             {axis:$Sim3Topic6,value:$Sim3Value6},
+             {axis:$Sim3Topic7,value:$Sim3Value7},
+             {axis:$Sim3Topic8,value:$Sim3Value8},
+             {axis:$Sim3Topic9,value:$Sim3Value9}
+         ]
+     ];
+     var dataSim4 = [
+         [
+             {axis:$Sim4Topic0,value:$Sim4Value0},
+             {axis:$Sim4Topic1,value:$Sim4Value1},
+             {axis:$Sim4Topic2,value:$Sim4Value2},
+             {axis:$Sim4Topic3,value:$Sim4Value3},
+             {axis:$Sim4Topic4,value:$Sim4Value4},
+             {axis:$Sim4Topic5,value:$Sim4Value5},
+             {axis:$Sim4Topic6,value:$Sim4Value6},
+             {axis:$Sim4Topic7,value:$Sim4Value7},
+             {axis:$Sim4Topic8,value:$Sim4Value8},
+             {axis:$Sim4Topic9,value:$Sim4Value9}
+         ]
+     ];
+
+
+
+
+		 //////////////////////////////////////////////////////////////
+		 //////////////////// Draw the Chart ////////////////////////// 
+		 ////////////////////////////////////////////////////////////// 
+
+		 var color = d3.scale.ordinal()
+				           .range(["#EDC951","#CC333F","#00A0B0"]);
+
+		 var radarChartOptions = {
+			   w: width,
+			   h: height,
+			   margin: margin,
+			   maxValue: 0.5,
+			   levels: 5,
+			   roundStrokes: true,
+			   color: color
+		 };
+
+
+     var marginSmall = {top: 50, right: 50, bottom: 50, left: 50};
+     var radarChartOptionsSmall = {
+ 			   w: 160,
+			   h: 160,
+			   margin: marginSmall,
+			   maxValue: 0.5,
+			   levels: 5,
+			   roundStrokes: true,
+			   color: color
+     }
+		 //Call function to draw the Radar chart
+		 RadarChart(".radarChart", data, radarChartOptions);
+		 RadarChart(".chart1", dataSim1, radarChartOptionsSmall);
+		 RadarChart(".chart2", dataSim2, radarChartOptionsSmall);
+		 RadarChart(".chart3", dataSim3, radarChartOptionsSmall);
+		 RadarChart(".chart4", dataSim4, radarChartOptionsSmall);
+		</script>
+
+</body>
+
+</html>
