@@ -13,7 +13,7 @@ There are three main step to generate the D3 visualization for the author topic 
 Generate_Cpp_Tsv_From_Corpus.ipynb is a python notebook contains all the necessary python code to transfer the corpus data into the data that can be recognized by the cpp code (fit the author topic model, the cpp code can be found on the turingcomput.net).
 
 # Generate html and analysis
-Analysis_and_Generate_html.ipynb 
+Analysis_and_Generate_html.ipynb is a python note book contains all the necessary python code to analysis the result generate from the cpp code and generate the html file. By analysis, here means that this python notebook will use knn algorithm and KL-divergence to classify the researches and color the network vertex.
 
 
 
